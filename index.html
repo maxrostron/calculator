@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="title">
+        <h1>A really simple calculator!</h1>
+    </div>
+
+    <div id="calcContainer">
+        <div id="screen"> </div>
+ 
+        <button id="zero" class="button number" onclick="addString(0)" value="0">0</button>
+        <button id="one" class="button number" onclick="addString(1)" value="1">1</button>
+        <button id="two" class="button number" onclick="addString(2)" value="2">2</button>
+        <button id="three" class="button number" onclick="addString(3)" value="3">3</button>
+        <button id="four" class="button number" onclick="addString(4)" value="4">4</button>
+        <button id="five" class="button number" onclick="addString(5)" value="5">5</button>
+        <button id="six" class="button number" onclick="addString(6)" value="6">6</button>
+        <button id="seven" class="button number" onclick="addString(7)" value="7">7</button>
+        <button id="eight" class="button number" onclick="addString(8)" value="8">8</button>
+        <button id="nine" class="button number" onclick="addString(9)" value="9">9</button>
+
+        <button id="add" class="button operator" onclick="addOperator(`+`)">+</button>
+        <button id="subtract" class="button operator" onclick="addOperator(`-`)">-</button>
+        <button id="multiply" class="button operator" onclick="addOperator(`*`)">*</button>
+        <button id="divide" class="button operator" onclick="addOperator(`/`)">/</button>
+        <button id="sum" class="button operator" onclick="equals()">=</button>
+        <button id="clear" class="button clear" onclick="remove()">C</button>
+        
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
